@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;800&family=Work+Sans&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #05101c;
+  color: white;
+  font-family: "Roboto Slab", serif;
+}
+
+.image-inverted {
+  filter: invert(100%);
+}
+
+.MuiOutlinedInput-input-root.Mui-focused,
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+}
+
+.rotate {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* Styles pour le bouton Border Magic */
+.border-magic-button {
+  position: relative;
+  display: inline-flex;
+  height: 3rem; /* équivalent à h-12 */
+  overflow: hidden;
+  border-radius: 9999px; /* équivalent à rounded-full */
+  padding: 0.25rem; /* équivalent à p-[1px] */
+  outline: none; /* équivalent à focus:outline-none */
+  box-shadow: 0 0 0 2px slategray; /* équivalent à focus:ring-2 focus:ring-slate-400 */
+  margin: 0.5rem; /* pour espacer les boutons */
+  background-color: transparent; /* pour un fond transparent initial */
+}
+
+.border-magic-effect {
+  position: absolute;
+  inset: -1000%;
+  animation: spin 2s linear infinite; /* équivalent à animate-[spin_2s_linear_infinite] */
+  background: conic-gradient(from 90deg at 50% 50%, #030303 0%, #09042d 50%, #030303 100%); /* équivalent à bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] */
+  z-index: 1;
+}
+
+.border-magic-content {
+  display: inline-flex;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px; /* équivalent à rounded-full */
+  background-color: None; /* équivalent à bg-slate-950 */
+  padding: 0.1rem 1.5rem; /* équivalent à px-3 py-1 */
+  font-size: 0.875rem; /* équivalent à text-sm */
+  font-weight: 500; /* équivalent à font-medium */
+  color: white; /* équivalent à text-white */
+  backdrop-filter: blur(3xl); /* équivalent à backdrop-blur-3xl */
+  position: relative;
+  z-index: 2;
+}
+
+/* Animation keyframes for spin */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
