@@ -13,7 +13,7 @@ const Footer = () => {
         }}
       >
         <p style={{ fontSize: "30px", textAlign: "center", padding: "20px" }}>
-          Built by
+          Built by&nbsp; 
           <span>
             <Link
               style={{ color: "white" }}
