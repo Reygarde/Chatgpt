@@ -8,7 +8,7 @@ config();
 const app = express();
 //middlewares
 app.use(cors({
-    origin: "https://reygarde-chat.com",
+    origin: ["https://www.reygarde-chat.com", "https://reygarde-chat.com"],
     credentials: true
 }));
 app.use(express.json());
