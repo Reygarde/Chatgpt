@@ -4,11 +4,17 @@ import morgan from "morgan";
 import appRouter from "./routes/index.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+
 config();
+
 const app = express();
 
 //middlewares
-app.use(cors({ origin: "https://chatgpt-opal-mu.vercel.app", credentials: true }));
+app.use(cors({
+  origin: "https://reygarde-chat.com",
+  credentials: true
+}));
+
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
