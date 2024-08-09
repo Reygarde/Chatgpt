@@ -9,8 +9,6 @@ const TypingAnim = () => {
         1000,
         "Built With OpenAI",
         2000,
-        "Using ChatGPT",
-        1500,
       ]}
       speed={50}
       style={{
